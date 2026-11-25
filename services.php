@@ -1,0 +1,70 @@
+<?php
+ob_start();
+include('includes/data.php');
+?>
+
+<div class="breadcrumb-area bg-default " data-background="assets/img/bg/breadcrumb-bg.jpg"
+    style="background-image: url(&quot;assets/img/breadcrumb/b1-bg-1.png&quot;);">
+    <div class="container fx-container-1">
+        <div class="breadcrumb-wrap">
+            <!-- left-content -->
+            <div class="breadcrumb-content">
+                <div class="breadcrumb-list ">
+                    <a href="index.php">Home</a>
+                    <span>Services</span>
+                </div>
+                <h1 class="breadcrumb-title fx-heading-1 text-uppercase ">
+                    Services
+                </h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- serve-start -->
+<div class="fx-serve-1-area fix p-relative pt-120 pb-120">
+
+    <div class="container fx-container-1">
+
+        <!-- section-title -->
+        <div class="fx-serve-1-scn-title mb-45">
+            <h6 class="fx-subtitle-1">
+                <span class="txaa-split-text-2 txaa-split-text-2-ani">Our Services</span>
+            </h6>
+
+            <h2 class="fx-scn-title-1 txaa-split-text-3 txaa-split-text-3-ani">
+                Complete Construction & Structural Solutions
+            </h2>
+        </div>
+
+        <div class="fx-services-page-item">
+            <?php foreach ($services as $service): ?>
+                <!-- single-item -->
+                <div class="fx-serve-1-slider-item">
+                    <div class="item-img fix img-cover">
+                        <img src="<?php echo htmlspecialchars($service['image']); ?>"
+                            alt="<?php echo htmlspecialchars($service['alt']); ?>">
+                    </div>
+                    <div class="content">
+                        <h5 class="item-title fx-heading-1 fx-font-500">
+                            <a href="<?php echo htmlspecialchars($service['link']); ?>" <?php echo htmlspecialchars($service['title']); ?> aria-label="name">Civil Engineering Contractors</a>
+                        </h5>
+                        <a class="item-btn" href="<?php echo htmlspecialchars($service['link']); ?>" <?php echo htmlspecialchars($service['title']); ?> aria-label="name">
+                            <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M40 20C40 8.97219 31.0278 -3.92187e-07 20 -8.74228e-07C8.97219 -1.35627e-06 -3.92187e-07 8.97219 -8.74228e-07 20C-1.35627e-06 31.0278 8.97219 40 20 40C31.0278 40 40 31.0278 40 20ZM2.5 20C2.5 10.3503 10.3503 2.5 20 2.5C29.6497 2.5 37.5 10.3503 37.5 20C37.5 29.6497 29.6497 37.5 20 37.5C10.3503 37.5 2.5 29.6497 2.5 20ZM22.1337 27.1338C21.6453 27.6222 20.8544 27.6222 20.3662 27.1338C20.1222 26.8897 20 26.5697 20 26.25C20 25.9303 20.1222 25.6103 20.3662 25.3662L24.4825 21.25L12.5 21.25C11.8091 21.25 11.25 20.6903 11.25 20C11.25 19.3097 11.8091 18.75 12.5 18.75L24.4825 18.75L20.3663 14.6337C19.8778 14.1453 19.8778 13.3544 20.3663 12.8662C20.8547 12.3781 21.6456 12.3778 22.1337 12.8662L28.3837 19.1163C28.8722 19.6047 28.8722 20.3956 28.3837 20.8838L22.1337 27.1338Z"
+                                    fill="#FC5220"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            <?php endforeach; ?>
+        </div>
+    </div>
+</div>
+<!-- serve-end -->
+
+<?php
+$content = ob_get_clean();
+require 'layout.php';
+?>
