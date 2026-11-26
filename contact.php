@@ -41,51 +41,60 @@ include('includes/data.php');
                             Industrial Service Solutions</h2>
                     </div>
 
-                    <form action="#" class="fx-form-1">
 
-                        <!-- single-box -->
+                    <form class="fx-form-1" id="whatsappForm" novalidate>
+
+                        <!-- Full Name -->
                         <div class="fx-form-1-box">
-                            <label class="fx-form-1-label">full name:</label>
-                            <input class="fx-form-1-input" type="text" placeholder="Enter Name">
+                            <label class="fx-form-1-label" for="name">Full Name:</label>
+                            <input class="fx-form-1-input" type="text" id="name" placeholder="Enter Your Name"
+                                maxlength="60" autocomplete="name" required>
+                            <small class="form-error" id="nameError"></small>
                         </div>
 
-                        <!-- single-box -->
+                        <!-- Phone -->
                         <div class="fx-form-1-box">
-                            <label class="fx-form-1-label">phone:</label>
-                            <input class="fx-form-1-input" type="tel" placeholder="+91 9876543210">
+                            <label class="fx-form-1-label" for="phone">Phone:</label>
+                            <input class="fx-form-1-input" type="tel" id="phone" placeholder="+91 9876543210"
+                                maxlength="16" autocomplete="tel" required>
+                            <small class="form-error" id="phoneError"></small>
                         </div>
 
-                        <!-- single-box -->
+                        <!-- Email -->
                         <div class="fx-form-1-box">
-                            <label class="fx-form-1-label">Email:</label>
-                            <input class="fx-form-1-input" type="email" placeholder="info@forgexindustry.co.uk">
+                            <label class="fx-form-1-label" for="email">Email:</label>
+                            <input class="fx-form-1-input" type="email" id="email" placeholder="Enter Your Email"
+                                maxlength="254" autocomplete="email">
+                            <small class="form-error" id="emailError"></small>
                         </div>
 
-                        <!-- single-box -->
+                        <!-- Subject -->
                         <div class="fx-form-1-box">
-                            <label class="fx-form-1-label">Subject:</label>
-                            <input class="fx-form-1-input" type="text" placeholder="subject.">
+                            <label class="fx-form-1-label" for="subject">Subject:</label>
+                            <input class="fx-form-1-input" type="text" id="subject" placeholder="Enter Subject"
+                                maxlength="100" required>
+                            <small class="form-error" id="subjectError"></small>
                         </div>
 
-                        <!-- single-box -->
+                        <!-- Message -->
                         <div class="fx-form-1-box">
-                            <label class="fx-form-1-label">message:</label>
-                            <textarea class="fx-form-1-input" placeholder="Write your message here..."></textarea>
+                            <label class="fx-form-1-label" for="message">Message:</label>
+                            <textarea class="fx-form-1-input" id="message" placeholder="Write Your Message Here..."
+                                maxlength="1000" required></textarea>
+                            <small class="form-error" id="messageError"></small>
                         </div>
 
-                        <!-- single-box -->
+                        <!-- Submit -->
                         <div class="fx-form-1-box fix txxaslideup">
                             <span class="txxaslideup-item fx-cube-1">
-                                <button type="button" aria-label="name" class="fx-pr-btn-1 ">
-                                    <span class="text" data-back="submit now" data-front="submit now"></span>
-                                    <i class="fa-solid fa-angle-right"></i>
+                                <button type="submit" class="fx-pr-btn-1" id="submitBtn">
+                                    <span class="text" data-back="Submit Now" data-front="Submit Now"></span>
+                                    <i class="fa-solid fa-arrow-right"></i>
                                 </button>
                             </span>
-
                         </div>
 
                     </form>
-
                 </div>
             </div>
 
@@ -115,9 +124,7 @@ include('includes/data.php');
                             <h6 class="box-title fx-heading-1 fx-font-400">
                                 Get in Touch:
                             </h6>
-
                             <ul class="info-list txxaslideup-item fx-cube-1">
-
                                 <!-- Email -->
                                 <li>
                                     <a href="mailto:<?= htmlspecialchars($site['email']); ?>">
@@ -125,7 +132,6 @@ include('includes/data.php');
                                         <?= htmlspecialchars($site['email']); ?>
                                     </a>
                                 </li>
-
                                 <!-- Phone -->
                                 <li>
                                     <a href="tel:<?= htmlspecialchars($site['phone_raw']); ?>">
@@ -133,7 +139,6 @@ include('includes/data.php');
                                         <?= htmlspecialchars($site['phone']); ?>
                                     </a>
                                 </li>
-
                                 <!-- Working Hours -->
                                 <li>
                                     <i class="fa-regular fa-clock"></i>
@@ -141,10 +146,8 @@ include('includes/data.php');
                                     <br>
                                     Monday to Sunday
                                 </li>
-
                             </ul>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -154,6 +157,16 @@ include('includes/data.php');
 <!-- contact-us-end -->
 
 <div class="fx-gap-12"></div>
+
+
+<div class="map-section pb-90">
+    <div class="container">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.3776746563353!2d77.2077657!3d28.5283657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce15eaa4831a9%3A0x7565ce16f4936da!2s268%2F3%2C%20Hauz%20Rani%2C%20Malviya%20Nagar%2C%20New%20Delhi%2C%20Delhi%20110017!5e0!3m2!1sen!2sin!4v1795676941621!5m2!1sen!2sin"
+            height="450" class="w-100" style="border:0;border-radius:12px" allowfullscreen="" loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+</div>
 
 
 

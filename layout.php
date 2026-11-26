@@ -1,4 +1,7 @@
-<?php include('includes/data.php'); ?>
+<?php
+include('includes/data.php');
+include_once 'seo.php';
+?>
 
 <!Doctype html>
 <html class="no-js" lang="zxx">
@@ -6,11 +9,31 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>HIH Designs</title>
-    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
-    <!-- Place favicon.ico in the root directory -->
+
+    <title><?= htmlspecialchars($pageMeta['title']); ?></title>
+    <meta name="description" content="<?= htmlspecialchars($pageMeta['description']); ?>">
+    <meta name="keywords" content="<?= htmlspecialchars($pageMeta['keywords']); ?>">
+    <meta name="robots" content="<?= htmlspecialchars($pageMeta['robots']); ?>">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="<?= htmlspecialchars($canonicalUrl); ?>">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="<?= htmlspecialchars($pageMeta['title']); ?>">
+    <meta property="og:description" content="<?= htmlspecialchars($pageMeta['description']); ?>">
+    <meta property="og:url" content="<?= htmlspecialchars($canonicalUrl); ?>">
+    <meta property="og:site_name" content="HIH Designs">
+
+    <!-- Standard Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/favicon/android-chrome-512x512.png">
+    <link rel="manifest" href="assets/img/favicon/site.webmanifest">
 
     <!-- CSS here -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -352,35 +375,6 @@
     </div>
     <!-- offcanvas-end -->
 
-    <!-- search-popup -->
-    <div class="txa-search-box search_box_active ">
-
-        <div class="txa-search-container">
-            <div class="txa-search-wrap text-center mb-55">
-                <h5 class="txa-search-title fx-heading-1 fx-font-500">Search</h5>
-                <form action="#" class="txa-search-form">
-                    <input class="txa-search-form-input" type="text" placeholder="What are you looking for?...">
-                </form>
-            </div>
-
-            <div class="txa-search-tag-wrap text-center">
-                <h6 class="txa-search-tag-title fx-font-400 fx-heading-1">People also search for:</h6>
-                <div class="txa-search-tag d-inline-flex flex-wrap  ">
-                    <a href="#" aria-label="name" class="txa-search-tag-item fx-heading-1 fx-font-500">Corporate</a>
-                    <a href="#" aria-label="name" class="txa-search-tag-item fx-heading-1 fx-font-500">Business</a>
-                    <a href="#" aria-label="name" class="txa-search-tag-item fx-heading-1 fx-font-500">Consulting</a>
-                    <a href="#" aria-label="name" class="txa-search-tag-item fx-heading-1 fx-font-500">Finance</a>
-                    <a href="#" aria-label="name" class="txa-search-tag-item fx-heading-1 fx-font-500">Reports</a>
-                </div>
-            </div>
-        </div>
-
-        <button aria-label="search-close" type="button" class="txa-search-box-close search_box_close">
-            <i class="fa-solid fa-xmark"></i>
-        </button>
-
-    </div>
-    <!-- search-popup -->
 
     <div class="overlay"></div>
     <!-- JS here -->
@@ -433,13 +427,13 @@
                             slidesPerView: 3
                         },
                         992: {
-                            slidesPerView: 5
+                            slidesPerView: 3
                         },
                         1200: {
-                            slidesPerView: 5
+                            slidesPerView: 4
                         },
                         1400: {
-                            slidesPerView: 5
+                            slidesPerView: 4
                         },
                         1600: {
                             slidesPerView: 5
@@ -452,6 +446,256 @@
         document.addEventListener('DOMContentLoaded', function () {
             setTimeout(initFxServices3Slider, 100);
             setTimeout(initFxServices3Slider, 500);
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+
+            $('.gallery-popup').magnificPopup({
+                delegate: '.gallery-popup-link',
+                type: 'image',
+
+                gallery: {
+                    enabled: true,
+                    navigateByImgClick: true,
+                    preload: [0, 1],
+                    tPrev: 'Previous',
+                    tNext: 'Next',
+                    tCounter: '%curr% of %total%'
+                },
+
+                mainClass: 'mfp-fade',
+                removalDelay: 300,
+
+                closeOnContentClick: false,
+                closeBtnInside: false,
+                showCloseBtn: true,
+                enableEscapeKey: true,
+                closeOnBgClick: true,
+
+                zoom: {
+                    enabled: true,
+                    duration: 300
+                }
+            });
+
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const form = document.getElementById("whatsappForm");
+
+            if (!form) return;
+
+            const fields = {
+                name: document.getElementById("name"),
+                phone: document.getElementById("phone"),
+                email: document.getElementById("email"),
+                subject: document.getElementById("subject"),
+                message: document.getElementById("message")
+            };
+
+            const submitBtn = document.getElementById("submitBtn");
+
+            const whatsappNumber = "919958235459";
+
+            // Show validation error
+            function showError(field, message) {
+                field.classList.add("is-invalid");
+                field.classList.remove("is-valid");
+                field.setAttribute("aria-invalid", "true");
+
+                document.getElementById(field.id + "Error").textContent = message;
+            }
+
+            // Clear validation error
+            function showSuccess(field) {
+                field.classList.remove("is-invalid");
+                field.classList.add("is-valid");
+                field.setAttribute("aria-invalid", "false");
+
+                document.getElementById(field.id + "Error").textContent = "";
+            }
+
+            // Name Validation
+            function validateName() {
+                const value = fields.name.value.trim();
+
+                if (!value) {
+                    showError(fields.name, "Please enter your full name.");
+                    return false;
+                }
+
+                if (value.length < 2 || value.length > 60) {
+                    showError(fields.name, "Name must be between 2 and 60 characters.");
+                    return false;
+                }
+
+                if (!/^[\p{L}][\p{L}\p{M}\s.'-]*$/u.test(value)) {
+                    showError(fields.name, "Please enter a valid name without numbers or special symbols.");
+                    return false;
+                }
+
+                showSuccess(fields.name);
+                return true;
+            }
+
+            // Phone Validation
+            function validatePhone() {
+                const value = fields.phone.value.trim();
+                let digits = value.replace(/\D/g, "");
+
+                if (!value) {
+                    showError(fields.phone, "Please enter your mobile number.");
+                    return false;
+                }
+
+                // Accept 10-digit Indian number or 91 + 10 digits
+                if (digits.length === 12 && digits.startsWith("91")) {
+                    digits = digits.slice(2);
+                }
+
+                if (!/^[6-9]\d{9}$/.test(digits)) {
+                    showError(fields.phone, "Enter a valid 10-digit Indian mobile number.");
+                    return false;
+                }
+
+                showSuccess(fields.phone);
+                return true;
+            }
+
+            // Email Validation (Optional)
+            function validateEmail() {
+                const value = fields.email.value.trim();
+
+                if (!value) {
+                    showSuccess(fields.email);
+                    return true;
+                }
+
+                if (value.length > 254 ||
+                    !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(value)) {
+                    showError(fields.email, "Please enter a valid email address.");
+                    return false;
+                }
+
+                showSuccess(fields.email);
+                return true;
+            }
+
+            // Subject Validation
+            function validateSubject() {
+                const value = fields.subject.value.trim();
+
+                if (!value) {
+                    showError(fields.subject, "Please enter a subject.");
+                    return false;
+                }
+
+                if (value.length < 3 || value.length > 100) {
+                    showError(fields.subject, "Subject must be between 3 and 100 characters.");
+                    return false;
+                }
+
+                showSuccess(fields.subject);
+                return true;
+            }
+
+            // Message Validation
+            function validateMessage() {
+                const value = fields.message.value.trim();
+
+                if (!value) {
+                    showError(fields.message, "Please enter your message.");
+                    return false;
+                }
+
+                if (value.length < 10 || value.length > 1000) {
+                    showError(fields.message, "Message must be between 10 and 1000 characters.");
+                    return false;
+                }
+
+                if (!/[\p{L}\p{N}]/u.test(value)) {
+                    showError(fields.message, "Please enter a meaningful message.");
+                    return false;
+                }
+
+                showSuccess(fields.message);
+                return true;
+            }
+
+            // Validate on blur
+            fields.name.addEventListener("blur", validateName);
+            fields.phone.addEventListener("blur", validatePhone);
+            fields.email.addEventListener("blur", validateEmail);
+            fields.subject.addEventListener("blur", validateSubject);
+            fields.message.addEventListener("blur", validateMessage);
+
+            // Clear error while typing
+            Object.values(fields).forEach(function (field) {
+                field.addEventListener("input", function () {
+                    if (field.classList.contains("is-invalid")) {
+                        field.classList.remove("is-invalid");
+                        field.removeAttribute("aria-invalid");
+                        document.getElementById(field.id + "Error").textContent = "";
+                    }
+                });
+            });
+
+            // Form Submit
+            form.addEventListener("submit", function (e) {
+                e.preventDefault();
+
+                const isNameValid = validateName();
+                const isPhoneValid = validatePhone();
+                const isEmailValid = validateEmail();
+                const isSubjectValid = validateSubject();
+                const isMessageValid = validateMessage();
+
+                if (
+                    !isNameValid ||
+                    !isPhoneValid ||
+                    !isEmailValid ||
+                    !isSubjectValid ||
+                    !isMessageValid
+                ) {
+                    const firstInvalid = form.querySelector(".is-invalid");
+                    if (firstInvalid) firstInvalid.focus();
+                    return;
+                }
+
+                const phoneDigits = fields.phone.value.replace(/\D/g, "");
+                const customerPhone = phoneDigits.length === 12
+                    ? phoneDigits.slice(2)
+                    : phoneDigits;
+
+                const whatsappMessage =
+                    `Hello HIH Designs,
+
+                    I would like to enquire about your services.
+                    
+                    Name: ${fields.name.value.trim()}
+                    Phone: ${customerPhone}
+                    Email: ${fields.email.value.trim() || "Not provided"}
+                    Subject: ${fields.subject.value.trim()}
+                    
+                    Message:
+                    ${fields.message.value.trim()}`;
+
+                const whatsappURL =
+                    "https://wa.me/" + whatsappNumber +
+                    "?text=" + encodeURIComponent(whatsappMessage);
+
+                const newWindow = window.open(whatsappURL, "_blank");
+
+                if (newWindow) {
+                    newWindow.opener = null;
+                } else {
+                    window.location.href = whatsappURL;
+                }
+            });
+
         });
     </script>
 </body>

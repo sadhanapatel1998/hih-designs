@@ -48,11 +48,9 @@ include('includes/data.php');
 
                 </div>
                 <p class="fx-para-1 fx-footer-1-disc-text mt-3">
-                    HIH Designs delivers reliable construction and structural solutions,
-                    including porta cabins, pergolas, metal structures, industrial sheds
-                    and civil works. We focus on quality workmanship, durable materials,
-                    practical designs and professional execution to create spaces built
-                    for strength, functionality and long-term performance.
+                    HIH Designs delivers reliable construction solutions, including porta cabins,
+                    pergolas, metal structures, industrial sheds and civil works. We focus on
+                    quality, durability and professional execution to build spaces that last.
                 </p>
             </div>
 

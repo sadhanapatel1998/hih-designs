@@ -47,4 +47,25 @@ $services = [
         'link' => 'civil-works.php'
     ],
 ];
+
+
+$gallery = [
+    [
+        'image' => 'image-1.jpeg',
+        'alt' => 'HIH Designs Construction Project'
+    ],
+    [
+        'image' => 'image-2.jpeg',
+        'alt' => 'HIH Designs Structural Work'
+    ],
+    [
+        'image' => 'image-3.jpeg',
+        'alt' => 'HIH Designs Industrial Construction'
+    ],
+    [
+        'image' => 'image-4.jpeg',
+        'alt' => 'HIH Designs Project Gallery'
+    ],
+];
+
 ?>

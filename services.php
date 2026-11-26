@@ -47,7 +47,7 @@ include('includes/data.php');
                     </div>
                     <div class="content">
                         <h5 class="item-title fx-heading-1 fx-font-500">
-                            <a href="<?php echo htmlspecialchars($service['link']); ?>" <?php echo htmlspecialchars($service['title']); ?> aria-label="name">Civil Engineering Contractors</a>
+                            <a href="<?php echo htmlspecialchars($service['link']); ?>" aria-label="name"><?php echo htmlspecialchars($service['title']); ?></a>
                         </h5>
                         <a class="item-btn" href="<?php echo htmlspecialchars($service['link']); ?>" <?php echo htmlspecialchars($service['title']); ?> aria-label="name">
                             <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">

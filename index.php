@@ -15,23 +15,23 @@ include('includes/data.php');
                     <div class="container fx-container-1">
                         <div class="fx-hero-3-slider-item">
                             <div class="fx-hero-3-slider-item-content">
-                                <h6 class="fx-hero-2-slider-item-number fx-heading-1">
+                                <!-- <h6 class="fx-hero-2-slider-item-number fx-heading-1">
                                     <span>01</span>
                                     <span>/</span>
                                     <span>02</span>
-                                </h6>
+                                </h6> -->
 
-                                <h1 class="fx-hero-2-slider-item-title fx-heading-2 text-uppercase "
-                                    data-txaa-split-text-1="">WE BUILD WITH STRENGTH. WE DESIGN FOR LIFE</h1>
+                                <h2 class="fx-hero-2-slider-item-title fx-heading-2 text-uppercase "
+                                    data-txaa-split-text-1="">WE BUILD WITH STRENGTH. WE DESIGN FOR LIFE</h2>
                                 <p class="fx-hero-2-slider-item-pera fx-para-1 fix"><span class="d-inline-block">Top
                                         Construction Service Innovates with Advanced Technology, Reducing Costs and
                                         Improving Project Timelines.</span></p>
 
                                 <div class="fx-hero-2-slider-item-btn fix">
                                     <span class="d-inline-block">
-                                        <a href="projects-details.html" aria-label="name" class="fx-pr-btn-1 ">
-                                            <span class="text" data-back="discover more"
-                                                data-front="discover more"></span>
+                                        <a href="services.php" aria-label="name" class="fx-pr-btn-1 ">
+                                            <span class="text" data-back="Discover more"
+                                                data-front="Discover more"></span>
                                             <i class="fa-solid fa-angle-right"></i>
                                         </a>
                                     </span>
@@ -111,22 +111,22 @@ include('includes/data.php');
                     <div class="container fx-container-1">
                         <div class="fx-hero-3-slider-item">
                             <div class="fx-hero-3-slider-item-content">
-                                <h6 class="fx-hero-2-slider-item-number fx-heading-1">
+                                <!-- <h6 class="fx-hero-2-slider-item-number fx-heading-1">
                                     <span>02</span>
                                     <span>/</span>
                                     <span>04</span>
-                                </h6>
-                                <h1 class="fx-hero-2-slider-item-title fx-heading-2 text-uppercase "
-                                    data-txaa-split-text-1="">YOUR TRUSTED CONSTRUCTION PARTNER</h1>
+                                </h6> -->
+                                <h2 class="fx-hero-2-slider-item-title fx-heading-2 text-uppercase "
+                                    data-txaa-split-text-1="">YOUR TRUSTED CONSTRUCTION PARTNER</h2>
                                 <p class="fx-hero-2-slider-item-pera fx-para-1 fix"><span
                                         class="d-inline-block">Delivering Reliable Construction, Metal Structures,
                                         Industrial Sheds and Custom Solutions with Quality, Precision and
                                         Commitment.</span></p>
                                 <div class="fx-hero-2-slider-item-btn fix">
                                     <span class="d-inline-block">
-                                        <a href="projects-details.html" aria-label="name" class="fx-pr-btn-1 ">
-                                            <span class="text" data-back="discover more"
-                                                data-front="discover more"></span>
+                                        <a href="services.php" aria-label="name" class="fx-pr-btn-1 ">
+                                            <span class="text" data-back="Discover more"
+                                                data-front="Discover more"></span>
                                             <i class="fa-solid fa-angle-right"></i>
                                         </a>
                                     </span>
@@ -425,14 +425,14 @@ include('includes/data.php');
                     <span>02</span>
                     <span class="txaa-split-text-2 txaa-split-text-2-ani">About HIH Designs</span>
                 </h6>
-                <h2 class="fx-scn-title-3 txaa-split-text-3 txaa-split-text-3-ani">About Construction Solutions</h2>
+                <h1 class="fx-scn-title-3 txaa-split-text-3 txaa-split-text-3-ani">About Construction Solutions</h1>
             </div>
             <div class="meddle">
                 <p class="scn-disc fx-para-1">From porta cabins and pergolas to metal structures, industrial sheds and
                     civil works, HIH Designs creates dependable solutions tailored to your needs.</p>
                 <span class="txxaslideup fix">
                     <span class="txxaslideup-item">
-                        <a href="about.html" aria-label="About HIH Designs" class="fx-pr-btn-1">
+                        <a href="about.php" aria-label="About HIH Designs" class="fx-pr-btn-1">
                             <span class="text" data-back="know about us" data-front="know about us"></span>
                             <i class="fa-solid fa-angle-right"></i>
                         </a>
@@ -463,7 +463,7 @@ include('includes/data.php');
 <!-- video-end -->
 
 <!-- services-start -->
-<div class="fx-services-3-area fix p-relative pt-145 pb-95">
+<div class="fx-services-3-area fix p-relative pt-120 pb-95">
     <!-- section-title -->
     <div class="container fx-container-1">
         <div class="fx-services-3-scn-title mb-75">
@@ -505,7 +505,7 @@ include('includes/data.php');
     </div>
     <div class="container fix text-center txxaslideup">
         <span class="txxaslideup-item">
-            <a href="services.html" aria-label="Discover all services" class="fx-pr-btn-1">
+            <a href="services.php" aria-label="Discover all services" class="fx-pr-btn-1">
                 <span class="text" data-back="Discover All Services" data-front="Discover All Services"></span>
                 <i class="fa-solid fa-angle-right"></i>
             </a>
@@ -641,7 +641,7 @@ include('includes/data.php');
                 Your Vision, Our Commitment — Let's Build Something Strong Together!
             </p>
             <span class="txxaslideup-item">
-                <a href="contact.html" aria-label="Contact HIH Designs" class="fx-services-2-btn">Let's Work
+                <a href="contact.php" aria-label="Contact HIH Designs" class="fx-services-2-btn">Let's Work
                     Together</a>
             </span>
         </div>
@@ -703,7 +703,7 @@ include('includes/data.php');
                                 <!-- single-item -->
                                 <div class="fx-core-1-slider-item-feature-single">
                                     <h5 class="item-title fx-heading-2 fx-font-600 fix">
-                                        <span class="fx-core-1-slideinup">Requirement Analysis</span>
+                                        <span class="fx-core-1-slideinup">STEP 01 - Requirement Analysis</span>
                                     </h5>
                                     <p class="item-disc fx-para-1 has-opacity-7">
                                         We understand your needs, project goals, budget and site requirements before
@@ -714,7 +714,7 @@ include('includes/data.php');
                                 <!-- single-item -->
                                 <div class="fx-core-1-slider-item-feature-single">
                                     <h5 class="item-title fx-heading-2 fx-font-600 fix">
-                                        <span class="fx-core-1-slideinup">Design & Planning</span>
+                                        <span class="fx-core-1-slideinup">STEP 02 - Design & Planning</span>
                                     </h5>
                                     <p class="item-disc fx-para-1 has-opacity-7">
                                         Our team prepares suitable designs, layouts and plans to ensure efficient
@@ -725,7 +725,7 @@ include('includes/data.php');
                                 <!-- single-item -->
                                 <div class="fx-core-1-slider-item-feature-single">
                                     <h5 class="item-title fx-heading-2 fx-font-600 fix">
-                                        <span class="fx-core-1-slideinup">Material & Preparation</span>
+                                        <span class="fx-core-1-slideinup">STEP 03 - Material & Preparation</span>
                                     </h5>
                                     <p class="item-disc fx-para-1 has-opacity-7">
                                         We arrange materials, resources and site preparation to ensure the project is
@@ -736,7 +736,7 @@ include('includes/data.php');
                                 <!-- single-item -->
                                 <div class="fx-core-1-slider-item-feature-single">
                                     <h5 class="item-title fx-heading-2 fx-font-600 fix">
-                                        <span class="fx-core-1-slideinup">Execution & Delivery</span>
+                                        <span class="fx-core-1-slideinup">STEP 04 - Execution & Delivery</span>
                                     </h5>
                                     <p class="item-disc fx-para-1 has-opacity-7">
                                         We carry out the construction with attention to quality, safety and timely
@@ -889,7 +889,7 @@ include('includes/data.php');
                             <div class="content-wrap">
                                 <h6 class="item-subtitle fx-heading-1 fx-font-500">Porta Cabins</h6>
                                 <h4 class="item-title fx-heading-1 fx-font-500">
-                                    <a href="blog-details.html" aria-label="Porta Cabin Solutions">
+                                    <a href="blog.php" aria-label="Porta Cabin Solutions">
                                         Modern Porta Cabins: Smart, Durable & Flexible Space Solutions
                                         <span>...</span>
                                     </a>
@@ -910,7 +910,7 @@ include('includes/data.php');
                             <div class="content-wrap">
                                 <h6 class="item-subtitle fx-heading-1 fx-font-500">Metal Structures</h6>
                                 <h4 class="item-title fx-heading-1 fx-font-500">
-                                    <a href="blog-details.html" aria-label="Metal Structure Solutions">
+                                    <a href="blog.php" aria-label="Metal Structure Solutions">
                                         Metal Structures: Strength, Durability & Modern Construction
                                         <span>...</span>
                                     </a>
@@ -931,7 +931,7 @@ include('includes/data.php');
                             <div class="content-wrap">
                                 <h6 class="item-subtitle fx-heading-1 fx-font-500">Industrial Sheds</h6>
                                 <h4 class="item-title fx-heading-1 fx-font-500">
-                                    <a href="blog-details.html" aria-label="Industrial Shed Construction">
+                                    <a href="blog.php" aria-label="Industrial Shed Construction">
                                         Industrial Sheds Designed for Efficiency, Safety & Performance
                                         <span>...</span>
                                     </a>
@@ -958,7 +958,7 @@ include('includes/data.php');
 
         <div class="fx-blog-1-item-all-btn text-center fix txxaslideup">
             <span class="txxaslideup-item">
-                <a href="blog.html" aria-label="name" class="fx-pr-btn-1 ">
+                <a href="blog.php" aria-label="name" class="fx-pr-btn-1 ">
                     <span class="text" data-back="Browse All News" data-front="Browse All News"></span>
                     <i class="fa-solid fa-angle-right"></i>
                 </a>
