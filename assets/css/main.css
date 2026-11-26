@@ -15773,9 +15773,13 @@ color: #9ecaa4;
   }
 }
 @media (max-width: 767px) {
-  .breadcrumb-area {
-    padding-top: 200px;
-  }
+    .breadcrumb-area {
+        padding-bottom: 50px;
+        padding-top: 178px;
+    }
+        .breadcrumb-content {
+        padding-top: 0px !important;
+        }
 }
 .breadcrumb-area::after {
   content: "";
@@ -17125,3 +17129,24 @@ color: #9ecaa4;
     gap: 12px;
     }
   }
+
+
+
+.close-icon::before,
+.close-icon::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background: #fff;
+    top: 50%;
+    left: 50%;
+}
+
+.close-icon::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.close-icon::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}

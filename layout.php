@@ -66,314 +66,209 @@ include_once 'seo.php';
     <?php require_once('includes/footer.php') ?>
     <div class="fx-gap-12"></div>
 
+
     <!-- offcanvas-start -->
-    <div class="txa-offcanvas-box  offcanvas_box_active">
-        <button class="txa-offcanvas-box-close offcanvas_box_close" aria-label="name">
-            <i class="fa-solid fa-xmark"></i>
+    <div class="txa-offcanvas-box offcanvas_box_active">
+        <button class="txa-offcanvas-box-close offcanvas_box_close" aria-label="Close Menu">
+          <i class="bi bi-x-lg"></i>
         </button>
         <div class="txa-offcanvas-box-container lenis lenis-smooth">
-
-            <!-- services -->
+            <!-- Services -->
             <div class="txa-offcanvas-services-wrap d-lg-block d-none">
-                <h5 class="txa-offcanvas-services-title fx-heading-1 fx-font-400">our services:</h5>
-
+                <h5 class="txa-offcanvas-services-title fx-heading-1 fx-font-400">
+                    Our Services:
+                </h5>
                 <ul class="txa-offcanvas-services">
                     <li>
                         <span class="offcanvas-slideup">
-                            <a class="txa-offcanvas-services-item fx-heading-1 fx-font-400 " href="#" aria-label="name">
+                            <a class="txa-offcanvas-services-item fx-heading-1 fx-font-400" href="porta-cabins.php">
                                 <i class="fa-solid fa-arrow-right"></i>
-                                Industrial Manufacturing
+                                Porta Cabins
                             </a>
                         </span>
                     </li>
                     <li>
                         <span class="offcanvas-slideup">
-                            <a class="txa-offcanvas-services-item fx-heading-1 fx-font-400 " href="#" aria-label="name">
+                            <a class="txa-offcanvas-services-item fx-heading-1 fx-font-400" href="pergolas.php">
                                 <i class="fa-solid fa-arrow-right"></i>
-                                Building maintenance
+                                Pergolas
                             </a>
                         </span>
                     </li>
                     <li>
                         <span class="offcanvas-slideup">
-                            <a class="txa-offcanvas-services-item fx-heading-1 fx-font-400 " href="#" aria-label="name">
+                            <a class="txa-offcanvas-services-item fx-heading-1 fx-font-400"
+                                href="roof-metal-structures.php">
                                 <i class="fa-solid fa-arrow-right"></i>
-                                Engineering
+                                Roof Metal Structures
                             </a>
                         </span>
                     </li>
                     <li>
                         <span class="offcanvas-slideup">
-                            <a class="txa-offcanvas-services-item fx-heading-1 fx-font-400 " href="#" aria-label="name">
+                            <a class="txa-offcanvas-services-item fx-heading-1 fx-font-400" href="roof-metal-sheds.php">
                                 <i class="fa-solid fa-arrow-right"></i>
-                                Construction
+                                Roof Metal Sheds
                             </a>
                         </span>
                     </li>
                     <li>
                         <span class="offcanvas-slideup">
-                            <a class="txa-offcanvas-services-item fx-heading-1 fx-font-400 " href="#" aria-label="name">
+                            <a class="txa-offcanvas-services-item fx-heading-1 fx-font-400" href="industrial-sheds.php">
                                 <i class="fa-solid fa-arrow-right"></i>
-                                Shipping
+                                Industrial Sheds
                             </a>
                         </span>
                     </li>
-
+                    <li>
+                        <span class="offcanvas-slideup">
+                            <a class="txa-offcanvas-services-item fx-heading-1 fx-font-400" href="civil-works.php">
+                                <i class="fa-solid fa-arrow-right"></i>
+                                Civil Works
+                            </a>
+                        </span>
+                    </li>
                 </ul>
             </div>
 
-            <div class="txa-offcanvas-search d-lg-none d-block">
-                <form action="#" class="txa-offcanvas-search-form">
-                    <input class="txa-offcanvas-search-form-input" type="text" aria-label="name" placeholder="Search">
-                    <button class="txa-offcanvas-search-form-btn" type="button" aria-label="name">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                </form>
-            </div>
-
-            <!-- mobile-menu-list -->
+            <!-- Mobile Menu -->
             <div class="mobile-menu-navigation d-lg-none d-block">
-                <nav class="mobile-main-navigation  clearfix ul-li">
+                <nav class="mobile-main-navigation clearfix ul-li">
                     <ul id="main-nav2" class="nav navbar-nav clearfix">
-
-                        <li class="dropdown">
-                            <a class="is-active" href="!#">home</a>
-                            <ul class="dropdown-menu clearfix">
-                                <li>
-                                    <a class="is-active" href="index.php">Industrial</a>
-                                </li>
-                                <li>
-                                    <a href="index-2.html">Construction</a>
-                                </li>
-                                <li>
-                                    <a href="index-3.html">Building</a>
-                                </li>
-                                <li>
-                                    <a href="index-4.html">Shipping</a>
-                                </li>
-                                <li>
-                                    <a href="index-5.html">manufacturing</a>
-                                </li>
-                                <li>
-                                    <a href="index-6.html">Engineering</a>
-                                </li>
-                            </ul>
-                        </li>
-
                         <li>
-                            <a href="about.html">about</a>
+                            <a href="index.php">Home</a>
                         </li>
-
-                        <li class="dropdown">
-                            <a href="!#">pages</a>
-                            <ul class="dropdown-menu clearfix">
-
-
-                                <li class="dropdown">
-                                    <a href="!#">services</a>
-                                    <ul class="dropdown-menu clearfix">
-                                        <li>
-                                            <a href="services.html">services</a>
-                                        </li>
-                                        <li>
-                                            <a href="services-details.html">services details</a>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                                <li class="dropdown">
-                                    <a href="!#">teams</a>
-                                    <ul class="dropdown-menu clearfix">
-                                        <li>
-                                            <a href="team.html">teams</a>
-                                        </li>
-                                        <li>
-                                            <a href="team-details.html">teams details</a>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                                <li class="dropdown">
-                                    <a href="!#">career</a>
-                                    <ul class="dropdown-menu clearfix">
-                                        <li>
-                                            <a href="career.html">career</a>
-                                        </li>
-                                        <li>
-                                            <a href="career-single.html">career single</a>
-                                        </li>
-                                        <li>
-                                            <a href="job-apply.html">job apply</a>
-                                        </li>
-                                    </ul>
-                                </li>
-
-
-                                <li>
-                                    <a href="clients.html">clients</a>
-                                </li>
-
-                                <li>
-                                    <a href="faqs.html">faqs</a>
-                                </li>
-
-                                <li>
-                                    <a href="pricing.html">pricing</a>
-                                </li>
-                                <li>
-                                    <a href="process.html">process</a>
-                                </li>
-
-                                <li>
-                                    <a href="testimonial.html">testimonial</a>
-                                </li>
-                                <li>
-                                    <a href="error.html">404</a>
-                                </li>
-
-                            </ul>
-                        </li>
-
-                        <li class="dropdown">
-                            <a href="!#">projects</a>
-
-                            <ul class="dropdown-menu clearfix">
-                                <li>
-                                    <a href="projects-1.html">projects one</a>
-                                </li>
-                                <li>
-                                    <a href="projects-2.html">projects two</a>
-                                </li>
-                                <li>
-                                    <a href="projects-3.html">projects three</a>
-                                </li>
-                                <li>
-                                    <a href="projects-4.html">projects four</a>
-                                </li>
-                                <li>
-                                    <a href="projects-details.html">projects details</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="dropdown">
-                            <a href="!#">news</a>
-
-                            <ul class="dropdown-menu clearfix">
-                                <li>
-                                    <a href="blog.html">Blog one</a>
-                                </li>
-                                <li>
-                                    <a href="blog-2.html">Blog two</a>
-                                </li>
-                                <li>
-                                    <a href="blog-3.html">Blog three</a>
-                                </li>
-                                <li>
-                                    <a href="blog-4.html">Blog four</a>
-                                </li>
-                                <li>
-                                    <a href="blog-details.html">Blog details</a>
-                                </li>
-                            </ul>
-                        </li>
-
                         <li>
-                            <a href="contact.html">contact</a>
+                            <a href="about.php">About Us</a>
                         </li>
-
+                        <li class="dropdown">
+                            <a href="services.php">Services</a>
+                            <ul class="dropdown-menu clearfix">
+                                <li>
+                                    <a href="services.php">All Services</a>
+                                </li>
+                                <li>
+                                    <a href="porta-cabins.php">Porta Cabins</a>
+                                </li>
+                                <li>
+                                    <a href="pergolas.php">Pergolas</a>
+                                </li>
+                                <li>
+                                    <a href="roof-metal-structures.php">Roof Metal Structures</a>
+                                </li>
+                                <li>
+                                    <a href="roof-metal-sheds.php">Roof Metal Sheds</a>
+                                </li>
+                                <li>
+                                    <a href="industrial-sheds.php">Industrial Sheds</a>
+                                </li>
+                                <li>
+                                    <a href="civil-works.php">Civil Works</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="projects.php">Projects</a>
+                        </li>
+                        <li>
+                            <a href="blog.php">Blog</a>
+                        </li>
+                        <li>
+                            <a href="contact.php">Contact</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
 
+            <!-- Offcanvas Contact & Social -->
             <div class="txa-offcanvas-content">
 
-                <!-- contact -->
+                <!-- Quick Contact -->
                 <div class="txa-offcanvas-content-box">
-                    <h6 class="txa-offcanvas-content-box-title fx-heading-1 fx-font-400">quick contact:</h6>
+
+                    <h6 class="txa-offcanvas-content-box-title fx-heading-1 fx-font-400">
+                        Quick Contact:
+                    </h6>
 
                     <ul class="txa-offcanvas-contact">
+
+                        <!-- Address -->
                         <li class="fx-heading-1 fix">
                             <span class="offcanvas-slideup">
                                 <i class="fa-solid fa-location-dot"></i>
-                                the londoner <br> 83 the strand, sliema, malta.
+                                <?= htmlspecialchars($site['address']); ?>
                             </span>
                         </li>
+
+                        <!-- Phone -->
                         <li class="fx-heading-1 fix">
                             <span class="offcanvas-slideup">
-                                <a href="#" aria-label="name">
+                                <a href="tel:<?= htmlspecialchars($site['phone_raw']); ?>">
                                     <i class="fa-solid fa-phone"></i>
-                                    +1 917 265 8444
+                                    <?= htmlspecialchars($site['phone']); ?>
                                 </a>
                             </span>
-
                         </li>
+
+                        <!-- Email -->
                         <li class="fx-heading-1 fix">
                             <span class="offcanvas-slideup">
-                                <a href="#" aria-label="name">
+                                <a href="mailto:<?= htmlspecialchars($site['email']); ?>">
                                     <i class="fa-solid fa-envelope-open-text"></i>
-                                    <span class="__cf_email__"
-                                        data-cfemail="27425f464a574b4267424a464e4b0944484a">[email&#160;protected]</span>
+                                    <?= htmlspecialchars($site['email']); ?>
                                 </a>
                             </span>
-
                         </li>
+
+                        <!-- Working Hours -->
+                        <li class="fx-heading-1 fix">
+                            <span class="offcanvas-slideup">
+                                <i class="fa-regular fa-clock"></i>
+                                <?= htmlspecialchars($site['hours']); ?>
+                            </span>
+                        </li>
+
                     </ul>
                 </div>
 
-                <!-- socail -->
+                <!-- Social Media -->
                 <div class="txa-offcanvas-content-box">
-                    <h6 class="txa-offcanvas-content-box-title fx-heading-1 fx-font-400">we're on social media:</h6>
+
+                    <h6 class="txa-offcanvas-content-box-title fx-heading-1 fx-font-400">
+                        Connect With Us:
+                    </h6>
 
                     <ul class="txa-offcanvas-social">
+
                         <li>
                             <span class="offcanvas-slideup">
-                                <a href="#" class="txa-offcanvas-social-item fx-heading-1 fx-font-500 "
-                                    aria-label="name">
-                                    <i class="fa-brands fa-linkedin-in"></i>
-                                    linkedin
+                                <a href="contact.php" class="txa-offcanvas-social-item fx-heading-1 fx-font-500">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    Get In Touch
                                 </a>
                             </span>
-
                         </li>
+
                         <li>
                             <span class="offcanvas-slideup">
-                                <a href="#" class="txa-offcanvas-social-item fx-heading-1 fx-font-500 "
-                                    aria-label="name">
-                                    <i class="fa-brands fa-facebook-f"></i>
-                                    facebook
+                                <a href="https://wa.me/<?= htmlspecialchars($site['phone_raw']); ?>" target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="txa-offcanvas-social-item fx-heading-1 fx-font-500">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                    WhatsApp
                                 </a>
                             </span>
-
-                        </li>
-                        <li>
-                            <span class="offcanvas-slideup">
-                                <a href="#" class="txa-offcanvas-social-item fx-heading-1 fx-font-500 "
-                                    aria-label="name">
-                                    <i class="fa-brands fa-x-twitter"></i>
-                                    twitter
-                                </a>
-                            </span>
-
-                        </li>
-                        <li>
-                            <span class="offcanvas-slideup">
-                                <a href="#" class="txa-offcanvas-social-item fx-heading-1 fx-font-500"
-                                    aria-label="name">
-                                    <i class="fa-brands fa-instagram"></i>
-                                    instagram
-                                </a>
-                            </span>
-
                         </li>
 
                     </ul>
+
                 </div>
 
             </div>
         </div>
     </div>
     <!-- offcanvas-end -->
+
 
 
     <div class="overlay"></div>
