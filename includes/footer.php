@@ -28,14 +28,6 @@ include('includes/data.php');
 
 <!-- footer-start -->
 <div class="fx-footer-3-area p-relative fix bg-default" data-background="assets/img/bg/footer-bg.jpg">
-
-
-    <div class="fx-footer-3-bg-shape txxaslideup fix">
-        <span class="txxaslideup-item">
-            <img src="assets/img/footer/f3-shape-1.svg" alt="">
-        </span>
-    </div>
-
     <div class="container fx-container-1">
         <div class="fx-footer-1-widget pt-120 pb-95">
 

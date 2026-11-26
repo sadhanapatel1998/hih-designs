@@ -41,7 +41,7 @@ include('includes/data.php');
                             <!-- right-img -->
                             <div class="fx-hero-3-slider-item-img p-relative">
                                 <div class="bg-shape">
-                                    <img src="assets/img/hero/h3-bg-shape-2.svg" alt="">
+                                    <img src="assets/img/hero/h3-bg-shape-2.svg" alt="Hero background geometric shape">
                                 </div>
 
                                 <div class="illu-icon-2">
@@ -193,7 +193,7 @@ include('includes/data.php');
                                 </div>
 
                                 <div class="main-img">
-                                    <img src="assets/img/hero/h3-img-2.png" alt="">
+                                    <img src="assets/img/hero/h3-img-2.png" alt="HIH Designs construction engineer and structural project">
                                 </div>
                             </div>
                         </div>
@@ -209,7 +209,7 @@ include('includes/data.php');
     </div>
 
     <!-- social -->
-    <div class="fx-social-icon-2 fx-hero-3-social">
+    <!-- <div class="fx-social-icon-2 fx-hero-3-social">
         <a href="#" class="fx-social-icon-2-btn" aria-label="name">
             <i class="fa-brands fa-facebook-f"></i>
         </a>
@@ -222,11 +222,11 @@ include('includes/data.php');
         <a href="#" class="fx-social-icon-2-btn" aria-label="name">
             <i class="fa-brands fa-instagram"></i>
         </a>
-    </div>
+    </div> -->
 
     <!-- shape -->
     <div class="fx-hero-3-bg-shape">
-        <img src="assets/img/hero/h3-bg-shape-1.svg" alt="">
+        <img src="assets/img/hero/h3-bg-shape-1.svg" alt="Hero decorative wave shape">
     </div>
 
     <div class="fx-hero-3-notice">
@@ -253,7 +253,7 @@ include('includes/data.php');
             Contact Us Today
         </h6>
 
-        <img src="assets/img/hero/h3-notice-bg-1.png" alt="" class="box-bg">
+        <img src="assets/img/hero/h3-notice-bg-1.png" alt="Contact hours notice background" class="box-bg">
     </div>
 
     <div class="fx-hero-3-slider-btn">
@@ -414,7 +414,7 @@ include('includes/data.php');
 <div class="fx-about-3-area ">
 
     <div class="fx-about-3-bg fix img-cover">
-        <img src="assets/img/about/a3-bg-shape-1.png" alt="">
+        <img src="assets/img/about/a3-bg-shape-1.png" alt="About section background shape">
     </div>
 
     <div class="container fx-container-1">
@@ -443,7 +443,7 @@ include('includes/data.php');
             <div class="fx-about-3-quality-height">
                 <div class="fx-about-3-quality">
                     <div class="icon">
-                        <img src="assets/img/bg/sticker.svg" alt="">
+                        <img src="assets/img/bg/sticker.svg" alt="Quality assurance badge">
                     </div>
                 </div>
             </div>
@@ -512,7 +512,7 @@ include('includes/data.php');
         </span>
     </div>
     <div class="fx-services-3-bg fix img-cover">
-        <img src="assets/img/services/s3-scn-bg.png" alt="">
+        <img src="assets/img/services/s3-scn-bg.png" alt="Services section background pattern">
     </div>
 </div>
 <!-- services-end -->
@@ -536,12 +536,12 @@ include('includes/data.php');
 
             <!-- single-card -->
             <div class="fx-services-2-card">
-                <img src="assets/img/why-choose/s2-card-illus.png" alt="" class="card-shape">
+                <img src="assets/img/why-choose/s2-card-illus.png" alt="Why choose us card decorative shape" class="card-shape">
                 <div class="card-bg img-cover fix">
-                    <img src="assets/img/why-choose/s2-card-bg.png" alt="">
+                    <img src="assets/img/why-choose/s2-card-bg.png" alt="Why choose us card background">
                 </div>
                 <div class="card-illus">
-                    <img src="assets/img/why-choose/1.png" alt="">
+                    <img src="assets/img/why-choose/1.png" alt="Quality Workmanship illustration">
                 </div>
                 <h5 class="card-title fx-heading-2 fx-font-600 has-clr-white">
                     Quality Workmanship
@@ -561,12 +561,12 @@ include('includes/data.php');
 
             <!-- single-card -->
             <div class="fx-services-2-card">
-                <img src="assets/img/why-choose/s2-card-illus.png" alt="" class="card-shape">
+                <img src="assets/img/why-choose/s2-card-illus.png" alt="Why choose us card decorative shape" class="card-shape">
                 <div class="card-bg img-cover fix">
-                    <img src="assets/img/why-choose/s2-card-bg.png" alt="">
+                    <img src="assets/img/why-choose/s2-card-bg.png" alt="Why choose us card background">
                 </div>
                 <div class="card-illus">
-                    <img src="assets/img/why-choose/2.png" alt="">
+                    <img src="assets/img/why-choose/2.png" alt="Customized Solutions illustration">
                 </div>
                 <h5 class="card-title fx-heading-2 fx-font-600 has-clr-white">
                     Customized Solutions
@@ -586,12 +586,12 @@ include('includes/data.php');
 
             <!-- single-card -->
             <div class="fx-services-2-card">
-                <img src="assets/img/why-choose/s2-card-illus.png" alt="" class="card-shape">
+                <img src="assets/img/why-choose/s2-card-illus.png" alt="Why choose us card decorative shape" class="card-shape">
                 <div class="card-bg img-cover fix">
-                    <img src="assets/img/why-choose/s2-card-bg.png" alt="">
+                    <img src="assets/img/why-choose/s2-card-bg.png" alt="Why choose us card background">
                 </div>
                 <div class="card-illus">
-                    <img src="assets/img/why-choose/3.png" alt="">
+                    <img src="assets/img/why-choose/3.png" alt="Built to Last durability illustration">
                 </div>
                 <h5 class="card-title fx-heading-2 fx-font-600 has-clr-white">
                     Built to Last
@@ -611,9 +611,9 @@ include('includes/data.php');
 
             <!-- single-card -->
             <div class="fx-services-2-card">
-                <img src="assets/img/why-choose/s2-card-illus.png" alt="" class="card-shape">
+                <img src="assets/img/why-choose/s2-card-illus.png" alt="Why choose us card decorative shape" class="card-shape">
                 <div class="card-bg img-cover fix">
-                    <img src="assets/img/why-choose/s2-card-bg.png" alt="">
+                    <img src="assets/img/why-choose/s2-card-bg.png" alt="Why choose us card background">
                 </div>
                 <div class="card-illus">
                     <img src="assets/img/why-choose/4.png" alt="Image">
@@ -645,10 +645,6 @@ include('includes/data.php');
                     Together</a>
             </span>
         </div>
-    </div>
-
-    <div class="fx-services-2-bg-img fix">
-        <img class="txaaslideright fx-cube-1" src="assets/img/services/s2-img-1.png" alt="">
     </div>
 </div>
 <!-- why-choose-us-end -->

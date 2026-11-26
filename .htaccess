@@ -1,0 +1,78 @@
+# ------------------------------------------------------------------------------
+# Apache Configuration for Dr. Ashish Kumar Goyal Orthopaedic Website
+# Fully compatible with both Local Development (subdirectories) and Live (root/domain)
+# ------------------------------------------------------------------------------
+
+# Disable directory browsing & MultiViews
+Options -Indexes -MultiViews +FollowSymLinks
+
+# Set default directory index
+DirectoryIndex index.php index.html
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # 1. Block access to hidden files and folders (e.g. .git, .env)
+    RewriteCond %{SCRIPT_FILENAME} -d [OR]
+    RewriteCond %{SCRIPT_FILENAME} -f
+    RewriteRule "(^|/)\." - [F]
+
+    # 2. Redirect direct requests for /index.php to / (or subdirectory root)
+    RewriteCond %{REQUEST_METHOD} !POST
+    RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s(.*)/index\.php [NC]
+    RewriteRule ^ %1/ [R=301,L]
+
+    # 3. External 301 Redirect: Browser requests any /path/filename.php directly
+    # Redirects to /path/filename without .php (preserves query strings)
+    RewriteCond %{REQUEST_METHOD} !POST
+    RewriteCond %{THE_REQUEST} !/index\.php [NC]
+    RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.?]+)\.php(\?[^\s]*)?\s [NC]
+    RewriteRule ^ %1 [R=301,L,NE]
+
+    # 4. Internal Rewrite: Request is /filename (not a directory or existing file)
+    # Check if filename.php exists and serve it transparently
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME}.php -f
+    RewriteRule ^(.*?)/?$ $1.php [L,QSA]
+
+</IfModule>
+
+# ------------------------------------------------------------------------------
+# Security: Deny direct access to sensitive files
+# ------------------------------------------------------------------------------
+<FilesMatch "(^\.|composer\.json|package\.json|\.lock$|data\.php$)">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+# ------------------------------------------------------------------------------
+# Performance: Gzip Compression
+# ------------------------------------------------------------------------------
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css
+    AddOutputFilterByType DEFLATE application/javascript application/x-javascript text/javascript
+    AddOutputFilterByType DEFLATE application/json application/xml image/svg+xml
+</IfModule>
+
+# ------------------------------------------------------------------------------
+# Performance: Browser Caching (Expires Headers)
+# ------------------------------------------------------------------------------
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 1 month"
+    ExpiresByType text/html "access plus 0 seconds"
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType text/javascript "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+</IfModule>
